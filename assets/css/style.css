@@ -1,0 +1,23 @@
+.container {
+  max-width: 1100px;
+}
+.hero-container{
+  min-height: 85vh;
+  background-image: url("../img/hero-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h1{
+  font-size: 60px;
+}
+img{
+  width: 100%;
+}
+.col-md-2 img{
+  width: 150px;
+}
+.row div{
+  max-width: 155px;
+}
+
