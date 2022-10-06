@@ -24,7 +24,7 @@
     <a href="#carrito" class="me-2">
       <button type="button" class="btn btn-primary position-relative">
         Carrito
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="btn-carrito-counter"></span>
       </button>
     </a>
   </nav>
@@ -98,7 +98,7 @@
       </div>
       <div class="card-body d-flex justify-content-between align-items-center">
         <span class="fs-3 fw-bold">$ 1,999.0</span>
-        <button class="btn btn-primary fs-6" href="#"  role="button">Agregar</button>
+        <button class="btn btn-primary fs-6" href="#"  role="button" onclick="addToCart('mac-1')">Agregar</button>
       </div>
     </div>
 
@@ -951,16 +951,18 @@
     <div class="pt-2 pb-3 border-bottom">
     
       <!-- empty item -->
-      <div class="d-flex align-items-center justify-content-between p-2">
-        <span class="text-muted fw-bold">Aun no tienes items dentro de tu compra!</span>
-        <div>
-          <span class="text-muted me-2">$ 0,000.0</span>
-          <span class="text-muted me-2">0</span>
-          <button type="button" class="btn btn-danger" disabled>Eliminar</button>
+      <div id="empty-item">
+        <div class="d-flex align-items-center justify-content-start p-2">
+          <span class="text-muted fw-bold">Aun no tienes items dentro de tu compra!</span>
         </div>
       </div>
-      
+     
+      <span id="items-cart">
+
+      </span>
+
       <!--  item -->
+      <!-- 
       <div class="d-flex align-items-center justify-content-between p-2">
         <span class="fw-bold">iPhone 14 Pro Max - 1TB</span>
         <div>
@@ -969,15 +971,16 @@
           <button type="button" class="btn btn-danger">Eliminar</button>
         </div>
       </div>
+      -->
 
     </div>
 
     <!-- total -->
     <div class="d-flex align-items-center justify-content-between pt-4 ps-2 pe-2">
       <h2>Total</h2>
-      <h2>$ 0,000.0</h2>
+      <h2>$ <span id="total-cart"></span></h2>
     </div>
-    <p class="text-muted pb-2 ms-2 fw-lighter">*Solo retiros en local</p>
+    <p class="text-muted pb-2 ms-2 fw-lighter">* Solo retiros en local</p>
 
   </div>
   
@@ -1023,7 +1026,7 @@
 
   <!-- footer -->
   <footer class="container container-fluid">
-      <span class="text-muted ms-1">&copy; 2022 Two Click Store by <a href="https://joaquinmetayer.com/" target="_blank">Joaquin Metayer</a>. See code <a href="https://github.com/joaquinmetayer/twoclickstore" target="_blank">here</a>.</span>
+      <span class="text-muted ms-1">&copy; 2022 Two Click Store by <a href="https://joaquinmetayer.com/" target="_blank">Joaquin Metayer</a> - See code <a href="https://github.com/joaquinmetayer/twoclickstore" target="_blank">here</a></span>
   </footer>
   
   <!-- JavaScript Bundle with Popper -->
