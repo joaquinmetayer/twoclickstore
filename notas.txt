@@ -10,4 +10,16 @@ Secciones que necesito JS:
 - Seccion de con que quiero pagar
   Si pagan en pesos tengo que buscar la cotizacion del dia en blue, convertir e imprimir
   Si paga en dolares solo imprime
+  Cuando le de a con que quiero pagar recien ahi se muestre el texto del precio y el boton de pago de sena 
 - Cuando le de pago con MP se oculte y se muestre mensaje de felicitaciones
+
+JUEVES
+- Que cuando le de agregar me agregue
+  componente en carrito
+  sume en circulo rojo btn carrito
+
+VIERNES
+- btn eliminar carrito
+
+DOMINGO
+- que sume dependiendo el valor del carrito en el total

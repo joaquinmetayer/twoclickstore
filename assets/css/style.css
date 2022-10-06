@@ -15,6 +15,12 @@ h1{
 img{
   width: 100%;
 }
+.filter div:hover{
+  cursor: pointer;
+}
+.filter-link:hover{
+  text-decoration: underline;
+}
 .col-md-2 img{
   width: 150px;
 }
@@ -46,7 +52,6 @@ img{
  height: 170px;
  width: auto;
 }
-
 footer{
   padding: 10px 30px 30px 30px;
 }
