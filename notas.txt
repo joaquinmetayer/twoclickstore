@@ -12,3 +12,4 @@ Secciones que necesito JS:
   Si paga en dolares solo imprime
   Cuando le de a con que quiero pagar recien ahi se muestre el texto del precio y el boton de pago de sena 
 - Cuando le de pago con MP se oculte y se muestre mensaje de felicitaciones
+
