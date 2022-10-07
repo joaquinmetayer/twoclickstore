@@ -20,6 +20,6 @@ function addToCart(str){
 
     // si es igual a iphone1 y no existe agregar este
     // si el contador es mayor a uno solo sumar contador
-    //cartContainer.innerHTML += '<div class="d-flex align-items-center justify-content-between p-2"><span class="fw-bold">iPhone 14 Pro Max - 1TB</span><div><span class="me-2">$ 1,599.0</span><button type="button" class="btn btn-danger" onclick="">Eliminar</button></div></div>'
+    cartContainer.innerHTML += '<div class="d-flex align-items-center justify-content-between p-2"><span class="fw-bold">iPhone 14 Pro Max - 1TB</span><div><span class="me-2">$ 1,599.0</span><button type="button" class="btn btn-danger" onclick="">Eliminar</button></div></div>'
     
 }

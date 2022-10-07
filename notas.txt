@@ -1,5 +1,18 @@
 App web basado en un ecommerce integrado en una landing page
 
+
+primera entrega: 
+
+optimizar el codigo haciendo el filtro sea en una sola 
+seccion haciendo que al tocar se oculten los que tengan cierta clase
+en carrito que al sumar un item, si ese item con un identificador ya existe, me sume en cantidad
+
+segunda entrega:
+
+hacer andar boton de eliminar
+es necesario una clase?
+
+
 Secciones que necesito JS:
 
 - Pushear item al dar agregar en seccion carrito
