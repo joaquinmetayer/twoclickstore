@@ -1,0 +1,9 @@
+
+
+
+
+SHOP:
+
+funcion que hasta que no agregue nada al carrito no se 
+muestre con que quiero pagar
+* con display flex / display none al darle a cualquiera de agregar
