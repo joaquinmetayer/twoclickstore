@@ -22,7 +22,8 @@ var cartUSD = 0
 
 // con que queres pagar?
 function pay(str){
-
+    window.location = "#total-cart"
+    
     // convirtiendo a pesos
     cartConvertPesos(totalCart)
 

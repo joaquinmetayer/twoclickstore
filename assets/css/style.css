@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 .hero-container{
   min-height: 83vh;
   background-image: url("../img/hero.jpeg");
