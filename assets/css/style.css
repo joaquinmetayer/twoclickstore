@@ -37,15 +37,6 @@ img{
   display: flex;
 
 }
-@media screen and (max-width: 700px) {
-  .items-container{
-    justify-content: center;
-  }
-  .card{
-    width: 100% !important;
-  }
-
-}
 .card{
   width: 280px;
   min-height: 530px;
@@ -76,4 +67,16 @@ iframe{
 }
 #dolares-pesos{
   display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .items-container{
+    justify-content: center;
+  }
+  .card{
+    width: 100% !important;
+  }
+  .item-cart{
+  flex-direction: column;
+  }
 }
