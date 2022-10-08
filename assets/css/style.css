@@ -1,12 +1,14 @@
 .hero-container{
   min-height: 83vh;
-  background-image: url("../img/hero-bg.jpeg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../img/hero.jpeg");
+  background-size:cover;
+  background-position: top;
   background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: 10px 10px 50px #000000;
 }
-body{
-  max-width: 1000px;
+main, nav, footer{
+  max-width: 1000px !important;
   margin: 0 auto;
 }
 h1{
@@ -36,6 +38,10 @@ img{
   .items-container{
     justify-content: center;
   }
+  .card{
+    width: 100% !important;
+  }
+
 }
 .card{
   width: 280px;
@@ -43,6 +49,7 @@ img{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  text-align: center;
 }
 .img-card-container{
   display: flex;
