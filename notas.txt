@@ -1,0 +1,5 @@
+- hacer la parte del carrito responsive
+- obtener con api el valor del usd asi cierro con la seccion del pago
+- que al darle al pagar los botones de elminar del carrido se desabiliten
+
+funcion que hasta que no agregue nada al carrito no se muestre con que quiero pagar

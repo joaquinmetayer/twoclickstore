@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="La mas facil y confiable tienda de productos de Apple en Córdoba, Argentina.">
     <title>Two Click Store</title>
-
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
-
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
     <!-- Custom styles -->
     <link href="./assets/css/style.css" rel="stylesheet">
-
   </head>
-  <body>
+<body>
 
 <!-- nav -->  
 <header class="sticky-top bg-white">
@@ -30,7 +26,6 @@
   </nav>
 </header>
 
-
 <main>
 
   <!-- hero -->
@@ -42,12 +37,12 @@
   </div>
 
   <!-- shop title -->
-  <div class="container text-center pt-2 pb-2" id="elegi">
+  <div class="container text-center pt-2 pb-1" id="elegi">
     <h2>Elige tu categoria</h2>
   </div>
 
   <!-- product type filter -->
-  <div class="container-fluid overflow-hidden row text-center d-flex justify-content-center aling-items-center pb-2 filter">
+  <div class="container-fluid overflow-hidden row text-center d-flex justify-content-center aling-items-center pb-5 filter">
     <!-- card iphone -->
     <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center" id="iphone-filter"">
       <img src="./assets/img/cards/card-iphone.png" class="p-3">
@@ -513,7 +508,8 @@
         <div>
           <span class="me-2">$ 1,599.0</span>
           <span class="me-2">1</span>
-          <button type="button" class="btn btn-danger">Eliminar</button>
+          <button type="button" class="btn btn-danger
+          ">Eliminar</button>
         </div>
       </div>
 
@@ -522,7 +518,7 @@
     <!-- total -->
     <div class="d-flex align-items-center justify-content-between pt-4 ps-2 pe-2">
       <h2>Total</h2>
-      <h2>$ 1.599,0 <span id="total-cart"></span></h2>
+      <h2>$ <span id="total-cart">1599</span></h2>
     </div>
     <p class="text-muted pb-2 ms-2 fw-lighter">* Solo retiros en local</p>
 
@@ -530,30 +526,34 @@
   
   <!-- checkout -->
   <div class="border-bottom border-top pt-4 pb-4 ms-3 me-3 mt-2">
-    <h2 class="text-center pb-2">¿Con qué queres abonar?</h2>
-    <p class="text-center">Seleccioná para convertir el precio y continuar!</p>
+
+    <div id="con-que">
+      <h2 class="text-center pb-2">¿Con qué queres abonar?</h2>
+      <p class="text-center">Seleccioná para convertir el precio y continuar!</p>
+    </div>
 
     <!-- currency -->
-    <div class="container-fluid d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-success m-2 p-3 fw-bold w-50 shadow-lg fs-5">Dólares</button>
-          <button type="button" class="btn btn-outline-info m-2 p-3 fw-bold w-50 shadow-lg fs-5">Pesos Argentinos</button>
+    <div class="container-fluid justify-content-center" id="dolares-pesos">
+          <button type="button" class="btn btn-outline-success m-2 p-3 fw-bold w-50 shadow-lg fs-5" onclick="pay('usd')" >Dólares</button>
+          <button type="button" class="btn btn-outline-info m-2 p-3 fw-bold w-50 shadow-lg fs-5" onclick="pay('pesos')" >Pesos Argentinos</button>
     </div>
 
     <!-- final price -->
-    <p class="text-center pt-3 fs-1 fw-bold">Precio compra final $ 0,000.0</p>
+    <p class="text-center pt-3 fs-1 fw-bold" id="precio-final">Precio compra final $ <span id="precio-final-converted"></span></p>
     
     <!-- pay seña -->
-    <div class="w-100 d-flex justify-content-center flex-column align-items-center">
-      <button type="button" class="btn btn-primary mt-2 p-3 fw-bold shadow-lg fs-4 w-75">Pagar seña de $ 0,000.0 en MercadoPago</button>
+    <div class="w-100 justify-content-center flex-column align-items-center" id="pago-sena">
+      <button type="button" class="btn btn-primary mt-2 p-3 fw-bold shadow-lg fs-3 w-75" onclick="pagoRealizado()">Pagar seña de $ <span id="sena-price"></span> Pesos</button>
       <p class="text-muted pt-3 ms-2 fw-lighter">* El valor de la seña es calculado en base al 10% de la compra</p>
     </div>
 
     <!-- Pago exitoso -->
-    <div class="w-100 m-0 pt-3 pb-1">
+    <div class="w-100 m-0 p-5 justify-content-center align-items-center flex-column" id="pago-exitoso">
       <h2 class="text-center fs-1 fw-bold pt-4">🎉  Felicitaciones ¡Seña exitosa!  🎊</h2>
       <p class="fs-5 text-center pb-4">Tu pedido estará listo para que retires en nuestro local dentro de las 24 horas.
       <br>Solo debes asistir con tu DNI y el dinero pendiente para finalizar el pago.
       </p>
+      <button type="button" class="btn btn-primary mt-2 p-3 fw-bold shadow-lg fs-4" onClick="location.href ='/index.html'">Volver a comprar</button>
     </div>
 
   </div>
