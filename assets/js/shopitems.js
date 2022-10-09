@@ -35,7 +35,6 @@ class ShoopItems{
                                                            </div>`
         document.getElementById(`un-item-msj${this.categoria + this.numeroItem}`).innerText = `Solo puedes agregar uno` 
 
-
         sumItemsCart += this.precio
         countItemsCart += 1
         insertTotalCart.innerHTML = sumItemsCart
@@ -86,7 +85,6 @@ class ShoopItems{
             retirosLocal.style.display = 'block'
             conQueAbono.style.display = 'block'
             emptyItem.style.display = 'none'
-
             pay('usd')
           }
         }
