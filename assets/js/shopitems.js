@@ -35,9 +35,17 @@ class ShoopItems{
                                                            </div>`
         document.getElementById(`un-item-msj${this.categoria + this.numeroItem}`).innerText = `Solo puedes agregar uno` 
 
+
         sumItemsCart += this.precio
         countItemsCart += 1
         insertTotalCart.innerHTML = sumItemsCart
+        totalContainer.style.display = 'flex'
+        retirosLocal.style.display = 'flex'
+        conQueAbono.style.display = 'block'
+        emptyItem.style.display = 'none'
+
+        // llamo a que calcule de nuevo para actualizar valor 
+        pay('usd')
         
         document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.add(`disabled`)
 
@@ -64,10 +72,25 @@ class ShoopItems{
         if(countItemsCart == 0){
             document.getElementById('btn-carrito-counter').innerHTML = ``
             document.getElementById("currency-btn01").classList.add(`disabled`)
-            document.getElementById("currency-btn02").classList.add(`disabled`)}
+            document.getElementById("currency-btn02").classList.add(`disabled`)
             pagoSena.style.display = 'none'
             precioFinal.style.display = 'none'
+            totalContainer.style.display = 'none'
+            retirosLocal.style.display = 'none'
+            conQueAbono.style.display = 'none'
+            emptyItem.style.display = 'flex'
+          }else if(countItemsCart >= 1){
+            pagoSena.style.display = 'flex'
+            precioFinal.style.display = 'block'
+            totalContainer.style.display = 'flex'
+            retirosLocal.style.display = 'block'
+            conQueAbono.style.display = 'block'
+            emptyItem.style.display = 'none'
+
+            pay('usd')
+          }
         }
+        
 }
 
 var sumItemsCart = 0

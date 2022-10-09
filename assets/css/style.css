@@ -62,7 +62,7 @@ iframe{
   width: 100%;
   height: 300px;
 }
-#precio-final, #pago-sena, #pago-exitoso{
+#precio-final, #pago-sena, #pago-exitoso, #total-container, #retiros-local, #con-que{
   display: none;
 }
 #dolares-pesos{

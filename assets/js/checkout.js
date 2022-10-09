@@ -1,12 +1,15 @@
 // traigo los elementos del html
 cartContainer = document.getElementById('carrito')
 
+totalContainer = document.getElementById('total-container')
+retirosLocal = document.getElementById('retiros-local')
 insertTotalCart = document.getElementById('total-cart')
 conQueAbono = document.getElementById('con-que')
 dolaresOPesos =document.getElementById('dolares-pesos')
 precioFinal = document.getElementById('precio-final')
 pagoSena = document.getElementById('pago-sena')
 senaContainer = document.getElementById('sena-price')
+emptyItem = document.getElementById('empty-item')
 precioConvertido = document.getElementById('precio-final-converted')
 pagoExitoso = document.getElementById('pago-exitoso')
 
@@ -20,7 +23,7 @@ var cartUSD = 0
 function pay(str){
     totalCart = document.getElementById('total-cart').innerText
 
-    window.location = "#total-cart"
+    window.location = "#carrito"
     // convirtiendo a pesos
     cartConvertPesos(totalCart)
     // muestro valor de sena 

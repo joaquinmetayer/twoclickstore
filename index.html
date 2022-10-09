@@ -484,26 +484,26 @@
     </div>
 
     <!-- total -->
-    <div class="d-flex align-items-center justify-content-between pt-4 ps-2 pe-2">
+    <div class="align-items-center justify-content-between pt-4 ps-2 pe-2" id="total-container">
       <h2>Total</h2>
       <h2>$ <span id="total-cart">0</span></h2>
     </div>
-    <p class="text-muted pb-2 ms-2 fw-lighter">* Solo retiros en local</p>
+    <p class="text-muted pb-2 ms-2 fw-lighter" id="retiros-local">* Solo retiros en local</p>
 
   </div>
   
   <!-- checkout -->
-  <div class="border-bottom border-top pt-4 pb-4 ms-3 me-3 mt-2">
+  <div>
 
-    <div id="con-que">
+    <div id="con-que" class="border-bottom border-top pt-4 pb-4 ms-3 me-3 mt-2">
       <h2 class="text-center pb-2">¿Con qué queres abonar?</h2>
       <p class="text-center">Seleccioná para convertir el precio y continuar!</p>
-    </div>
-
-    <!-- currency -->
-    <div class="container-fluid justify-content-center" id="dolares-pesos">
-          <button type="button" class="btn btn-outline-success m-2 p-3 fw-bold w-50 shadow-lg fs-5 disabled" onclick="pay('usd')" id="currency-btn01">Dólares</button>
-          <button type="button" class="btn btn-outline-info m-2 p-3 fw-bold w-50 shadow-lg fs-5 disabled" onclick="pay('pesos')" id="currency-btn02">Pesos Argentinos</button>
+     
+      <!-- currency -->
+      <div class="container-fluid justify-content-center" id="dolares-pesos">
+            <button type="button" class="btn btn-outline-success m-2 p-3 fw-bold w-50 shadow-lg fs-5 disabled" onclick="pay('usd')" id="currency-btn01">Dólares</button>
+            <button type="button" class="btn btn-outline-info m-2 p-3 fw-bold w-50 shadow-lg fs-5 disabled" onclick="pay('pesos')" id="currency-btn02">Pesos Argentinos</button>
+      </div>
     </div>
 
     <!-- final price -->
@@ -528,7 +528,7 @@
 
   <!-- ubicación -->
   <div class="border-bottom pb-4 m-3">
-    <h2 class="pt-2 pb-2 text-center">Encuentranos aquí!</h2>
+    <h2 class="pt-2 pb-2 text-center">Encuéntranos aquí!</h2>
     <div class="overflow-hidden m-3 text-center bg-light rounded d-flex justify-content-center align-items-center flex-column shadow-lg">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.201436119038!2d-64.21718838489022!3d-31.381008801681563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298e16c8d3053%3A0x7fc78b1f816ef745!2sOneClick%20C%C3%B3rdoba%20Shopping!5e0!3m2!1sen!2sar!4v1664995580878!5m2!1sen!2sar"></iframe>
     </div>
