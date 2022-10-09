@@ -1,7 +1,6 @@
 
-
-
-
+contador en boton carrito que sume y reste
+que si no tengo nada en el carrito que me inabilite los botones de seleccionar pesos o dolares
 SHOP:
 
 funcion que hasta que no agregue nada al carrito no se 
