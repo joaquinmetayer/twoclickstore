@@ -36,15 +36,31 @@ class ShoopItems{
         document.getElementById('un-item-msj').innerText = `Solo puedes agregar uno` 
 
         sumItemsCart += this.precio
+        countItemsCart += 1
         insertTotalCart.innerHTML = sumItemsCart
-        document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.add(`disabled`)
+
+        if(countItemsCart == 1){
+            document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.add(`disabled`)
+            document.getElementById("currency-btn01").classList.remove(`disabled`)
+            document.getElementById("currency-btn02").classList.remove(`disabled`)
+        }
+        
+        document.getElementById('btn-carrito-counter').innerHTML = countItemsCart
     }
     btnEliminar(){
         document.getElementById(`${this.categoria + this.numeroItem}`).remove()
         document.getElementById('un-item-msj').innerHTML = `<span style="visibility: hidden;">oculto</span>` 
+
         sumItemsCart -= this.precio
+        countItemsCart -= 1
         insertTotalCart.innerHTML = sumItemsCart
         document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.remove(`disabled`)
+        document.getElementById('btn-carrito-counter').innerHTML = countItemsCart
+
+        if(countItemsCart == 0){
+            document.getElementById('btn-carrito-counter').innerHTML = ``
+            document.getElementById("currency-btn01").classList.add(`disabled`)
+            document.getElementById("currency-btn02").classList.add(`disabled`)}
     }
 
 }
@@ -53,9 +69,4 @@ macbook1.createItem()
 
 
 var sumItemsCart = 0
-
-//funcion que cuando le de agregar se sume al carrito
-// que oculte el de carro vacio
-// que agregue el elemento html con la descipcion, precio, boton de eliminar para el mismo
-// y que sume en una variable el precio total del carrito
-// que agrege icono rojo carrito contador
+var countItemsCart = 0

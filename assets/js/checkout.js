@@ -1,6 +1,6 @@
 // traigo los elementos del html
 cartContainer = document.getElementById('carrito')
-totalCart = document.getElementById('total-cart').innerText
+
 insertTotalCart = document.getElementById('total-cart')
 conQueAbono = document.getElementById('con-que')
 dolaresOPesos =document.getElementById('dolares-pesos')
@@ -18,6 +18,8 @@ var cartUSD = 0
 
 // con que queres pagar?
 function pay(str){
+    totalCart = document.getElementById('total-cart').innerText
+
     window.location = "#total-cart"
     // convirtiendo a pesos
     cartConvertPesos(totalCart)

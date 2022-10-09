@@ -1,8 +1,9 @@
 
-contador en boton carrito que sume y reste
-que si no tengo nada en el carrito que me inabilite los botones de seleccionar pesos o dolares
-SHOP:
+agregar todos los productos
+filtro de productos
 
-funcion que hasta que no agregue nada al carrito no se 
-muestre con que quiero pagar
-* con display flex / display none al darle a cualquiera de agregar
+
+de la parte funcional que mas queda?
+- calculo del dolar de hoy con api
+
+comentar todo el codigo
