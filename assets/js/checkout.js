@@ -70,3 +70,4 @@ function pagoRealizado(){
     dolaresOPesos.style.display = 'none'
     precioFinal.style.display = 'none'
 }
+
