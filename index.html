@@ -30,7 +30,7 @@
 
   <!-- hero -->
   <div class="overflow-hidden p-4 m-3 text-center rounded d-flex justify-content-center align-items-center flex-column hero-container shadow-lg p-3 mb-5 bg-body">
-      <h1 class="fw-bold p-2 ">Two Click</h1>
+      <h1 class="fw-bold p-2">Two Click</h1>
       <p class="lead fw-normal fst-italic pt-2 pb-1">A dos clicks de distancia de tener tus productos de Apple.</p>
       <h3 class="pt-0 pb-4">Agregá, señá y buscá.</h3>
       <a class="btn btn-primary p-2" href="#elegi">Hacer pedido</a>
@@ -44,27 +44,27 @@
   <!-- product type filter -->
   <div class="container-fluid overflow-hidden row text-center d-flex justify-content-center aling-items-center pb-5 mt-2 mb-2 filter">
     <!-- card airpods -->
-    <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center" onclick="filterProducts('airpods')">
+    <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center" id="btn-airpods">
       <img src="./assets/img/cards/card-airpods.png" class="p-3">
       <span class="fw-bold filter-link">AirPods</span>
     </div>
     <!-- card iphone -->
-    <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center" onclick="filterProducts('iphone')">
+    <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center" id="btn-iphone">
       <img src="./assets/img/cards/card-iphone.png" class="p-3">
       <span class="fw-bold filter-link">iPhone</span>
     </div>
     <!-- card ipad -->
-    <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center" onclick="filterProducts('ipad')">
+    <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center" id="btn-ipad">
       <img src="./assets/img/cards/card-ipad.png" class="p-3">
       <span class="fw-bold filter-link">iPad</span>
     </div>
     <!-- card macbook -->
-    <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center" onclick="filterProducts('macbook')">
+    <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center"  id="btn-macbook">
       <img src="./assets/img/cards/card-mac.png" class="p-3">
       <span class="fw-bold filter-link">MacBook</span>
     </div>
     <!-- card all -->
-    <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center" onclick="filterProducts('todos')">
+    <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center"  id="btn-todos">
       <img src="./assets/img/cards/card-all.png" class="p-3">
       <span class="fw-bold filter-link">Todos</span>
     </div>
@@ -161,5 +161,7 @@
   <script src="/assets/js/shopitems.js"></script>
   <script src="/assets/js/cart.js"></script>
   <script src="/assets/js/items.js"></script>
+  <script src="/assets/js/filterproduct.js"></script>
+
 </body>
 </html>

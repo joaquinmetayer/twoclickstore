@@ -19,96 +19,6 @@ var compraUSD = 0
 var senaPesos = 0
 var cartUSD = 0
 
-// btn filtro producto
-function filterProducts(str){
-    // llamo al primer item con la clase airpods
-    itemsAirpods = document.getElementsByClassName('airpods')[0]
-    itemsIphone = document.getElementsByClassName('iphone')[0]
-    itemsIpad = document.getElementsByClassName('ipad')[0]
-    itemsMacbook = document.getElementsByClassName('macbook')[0]
-
-    // genero otro con misma clase para iterar
-    allsAirpods = document.getElementsByClassName('airpods')
-    allsIphone = document.getElementsByClassName('iphone')
-    allsIpad = document.getElementsByClassName('ipad')
-    allsMacbook = document.getElementsByClassName('macbook')
-    
-    // si coincide muestro y oculto
-    switch(str){
-        case 'airpods':
-            for (const itemsMacbook of allsMacbook) {
-                itemsMacbook.style.display = 'none'
-            }
-            for (const itemsIpad of allsIpad) {
-                itemsIpad.style.display = 'none'
-            }
-            for (const itemsIphone of allsIphone) {
-                itemsIphone.style.display = 'none'
-            }
-            for (const itemsAirpods of allsAirpods) {
-                itemsAirpods.style.display = 'flex'
-            }
-            console.log('hola')
-            break
-        case 'iphone':
-            for (const itemsMacbook of allsMacbook) {
-                itemsMacbook.style.display = 'none'
-            }
-            for (const itemsIpad of allsIpad) {
-                itemsIpad.style.display = 'none'
-            }
-            for (const itemsIphone of allsIphone) {
-                itemsIphone.style.display = 'flex'
-            }
-            for (const itemsAirpods of allsAirpods) {
-                itemsAirpods.style.display = 'none'
-            }
-            break
-        case 'ipad':
-            for (const itemsMacbook of allsMacbook) {
-                itemsMacbook.style.display = 'none'
-            }
-            for (const itemsIpad of allsIpad) {
-                itemsIpad.style.display = 'flex'
-            }
-            for (const itemsIphone of allsIphone) {
-                itemsIphone.style.display = 'none'
-            }
-            for (const itemsAirpods of allsAirpods) {
-                itemsAirpods.style.display = 'none'
-            }
-            break
-        case 'macbook':
-            for (const itemsMacbook of allsMacbook) {
-                itemsMacbook.style.display = 'flex'
-            }
-            for (const itemsIpad of allsIpad) {
-                itemsIpad.style.display = 'none'
-            }
-            for (const itemsIphone of allsIphone) {
-                itemsIphone.style.display = 'none'
-            }
-            for (const itemsAirpods of allsAirpods) {
-                itemsAirpods.style.display = 'none'
-            }
-            break
-        case 'todos':
-            for (const itemsMacbook of allsMacbook) {
-                itemsMacbook.style.display = 'flex'
-            }
-            for (const itemsIpad of allsIpad) {
-                itemsIpad.style.display = 'flex'
-            }
-            for (const itemsIphone of allsIphone) {
-                itemsIphone.style.display = 'flex'
-            }
-            for (const itemsAirpods of allsAirpods) {
-                itemsAirpods.style.display = 'flex'
-            }
-            break
-    }
-}
-
 // con que queres pagar?
 function pay(str){
     totalCart = document.getElementById('total-cart').innerText
@@ -127,8 +37,6 @@ function pay(str){
     precioFinal.style.display = 'block'
     pagoSena.style.display = 'flex'
 }
-
-
 
 // funcion que cuando le de a pagar en pesos cal y me guarde en variable
 function cartConvertPesos(str){
@@ -149,8 +57,6 @@ function getActualUSDPrice(){
     //compraUSD =
 }
 
-
-
 // funcion para sacar el 10% en pesos y que me lo ponga en el boton
 function calculoSena(int){
     senaPesos = cartPesos * 0.1
@@ -158,11 +64,12 @@ function calculoSena(int){
 }
 // cuando realiza el pago
 function pagoRealizado(){
-    window.location = "#carrito"
     pagoExitoso.style.display = 'flex'
     cartContainer.style.display = 'none'
     conQueAbono.style.display = 'none'
     pagoSena.style.display = 'none'
     dolaresOPesos.style.display = 'none'
     precioFinal.style.display = 'none'
+
+    window.location = "#pago-exitoso"
 }

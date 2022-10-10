@@ -1,12 +1,16 @@
-
 Tarde:
 
-quotex trade? O me quedo en us30
+2 diapo coder
+ver en que dispo voy a tradear
+2 diapo coder
+tercera entrega
+edit steps y plan para quotex
+
 sl arriba 30min
-4 diapo + tercera entrega
+ubuntu compu asus
 sl abajo 30min
 affeit
-ubuntu compu asus
+
 
 Martes por la manana:
 
@@ -15,5 +19,5 @@ Martes por la manana:
 de la parte funcional que mas queda?
 - calculo del dolar de hoy con api
 - modal cuando agrego un item?
-
+- afinar responsive
 
