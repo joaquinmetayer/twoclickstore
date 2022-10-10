@@ -1,6 +1,5 @@
 // traigo los elementos del html
 cartContainer = document.getElementById('carrito')
-
 totalContainer = document.getElementById('total-container')
 retirosLocal = document.getElementById('retiros-local')
 insertTotalCart = document.getElementById('total-cart')
@@ -12,12 +11,103 @@ senaContainer = document.getElementById('sena-price')
 emptyItem = document.getElementById('empty-item')
 precioConvertido = document.getElementById('precio-final-converted')
 pagoExitoso = document.getElementById('pago-exitoso')
+shopItemsContainer = document.getElementById('shop-items-container')
 
 // variables
 var cartPesos = 0
 var compraUSD = 0
 var senaPesos = 0
 var cartUSD = 0
+
+
+// btn filtro producto
+function filterProducts(str){
+    itemsAirpods = document.getElementsByClassName('airpods')[0]
+    allsAirpods = document.getElementsByClassName('airpods')
+
+    itemsIphone = document.getElementsByClassName('iphone')[0]
+    allsIphone = document.getElementsByClassName('iphone')
+
+    itemsIpad = document.getElementsByClassName('ipad')[0]
+    allsIpad = document.getElementsByClassName('ipad')
+
+    itemsMacbook = document.getElementsByClassName('macbook')[0]
+    allsMacbook = document.getElementsByClassName('macbook')
+
+    switch(str){
+        case 'airpods':
+            for (const itemsMacbook of allsMacbook) {
+                itemsMacbook.style.display = 'none'
+            }
+            for (const itemsIpad of allsIpad) {
+                itemsIpad.style.display = 'none'
+            }
+            for (const itemsIphone of allsIphone) {
+                itemsIphone.style.display = 'none'
+            }
+            for (const itemsAirpods of allsAirpods) {
+                itemsAirpods.style.display = 'flex'
+            }
+            console.log('hola')
+            break
+        case 'iphone':
+            for (const itemsMacbook of allsMacbook) {
+                itemsMacbook.style.display = 'none'
+            }
+            for (const itemsIpad of allsIpad) {
+                itemsIpad.style.display = 'none'
+            }
+            for (const itemsIphone of allsIphone) {
+                itemsIphone.style.display = 'flex'
+            }
+            for (const itemsAirpods of allsAirpods) {
+                itemsAirpods.style.display = 'none'
+            }
+            break
+        case 'ipad':
+            for (const itemsMacbook of allsMacbook) {
+                itemsMacbook.style.display = 'none'
+            }
+            for (const itemsIpad of allsIpad) {
+                itemsIpad.style.display = 'flex'
+            }
+            for (const itemsIphone of allsIphone) {
+                itemsIphone.style.display = 'none'
+            }
+            for (const itemsAirpods of allsAirpods) {
+                itemsAirpods.style.display = 'none'
+            }
+            break
+        case 'macbook':
+            for (const itemsMacbook of allsMacbook) {
+                itemsMacbook.style.display = 'flex'
+            }
+            for (const itemsIpad of allsIpad) {
+                itemsIpad.style.display = 'none'
+            }
+            for (const itemsIphone of allsIphone) {
+                itemsIphone.style.display = 'none'
+            }
+            for (const itemsAirpods of allsAirpods) {
+                itemsAirpods.style.display = 'none'
+            }
+            break
+        case 'todos':
+            for (const itemsMacbook of allsMacbook) {
+                itemsMacbook.style.display = 'flex'
+            }
+            for (const itemsIpad of allsIpad) {
+                itemsIpad.style.display = 'flex'
+            }
+            for (const itemsIphone of allsIphone) {
+                itemsIphone.style.display = 'flex'
+            }
+            for (const itemsAirpods of allsAirpods) {
+                itemsAirpods.style.display = 'flex'
+            }
+            break
+    }
+}
 
 // con que queres pagar?
 function pay(str){

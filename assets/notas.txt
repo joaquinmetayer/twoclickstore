@@ -8,6 +8,7 @@ in coffee:
 
 Tarde:
 
+quotex trade? O me quedo en us30
 sl arriba 30min
 4 diapo + tercera entrega
 sl abajo 30min
