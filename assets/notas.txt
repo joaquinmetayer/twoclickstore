@@ -1,8 +1,17 @@
-
+diapositiva + tasks
+10
+  que guarde items de carrito en un JSON para que se quede 
+  guardado el local storage y resetee cuando le de voler a comprar
+11
+  que recien cuando elija la divisa me muestre boton de pago
+  afinar responsive
+12
+  modal tipo alert cuando agrego un item?
+13
+14
+15
+16
 
 ------------------------------------
 de la parte funcional que mas queda?
 - calculo del dolar de hoy con api
-- que recien cuando elija la divisa me muestre boton de pago
-- modal cuando agrego un item?
-- afinar responsive
