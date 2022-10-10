@@ -1,9 +1,25 @@
-filtro de productos
+in coffee:
 
-comentar todo el codigo
+- filtro de productos
+- carrito en mobile responsive
+- quitar el codigo que no uso
+- comentar + ordenar
+- felicitaciones que habra en otra ventana
+
+Tarde:
+
+sl arriba 30min
+4 diapo + tercera entrega
+sl abajo 30min
+affeit
+ubuntu compu asus
+
+Martes por la manana:
+
+4 diapo + entrega final
 
 de la parte funcional que mas queda?
 - calculo del dolar de hoy con api
 - modal cuando agrego un item?
-- felicitaciones que habra en otra ventana
+
 
