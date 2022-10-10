@@ -36,7 +36,6 @@ img{
 .items-container{
   justify-content: space-around;
   display: flex;
-
 }
 .card{
   width: 280px;
@@ -65,6 +64,9 @@ iframe{
 }
 #dolares-pesos{
   display: flex;
+}
+#pago-exitoso{
+  min-height: 83vh;
 }
 .items-container{
   align-items: center;

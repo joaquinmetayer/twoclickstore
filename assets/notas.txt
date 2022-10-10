@@ -1,6 +1,3 @@
-in coffee:
-
-- felicitaciones que habra en otra ventana
 
 Tarde:
 
