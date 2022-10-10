@@ -60,6 +60,10 @@ class ShoopItems{
             document.getElementById("currency-btn01").classList.remove(`disabled`)
             document.getElementById("currency-btn02").classList.remove(`disabled`)
         }
+
+        // con local storage que guarde mi carrito hasta que no le den al volver a comprar que se resetea
+
+
     }
     // elimino items del carrito
     btnEliminar(){
