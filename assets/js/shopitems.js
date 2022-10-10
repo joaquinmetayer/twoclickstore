@@ -25,9 +25,9 @@ class ShoopItems{
                                         </div>`
     }
     addToCartItem(){
-        document.getElementById('items-cart').innerHTML += `<div class="d-flex align-items-center justify-content-between p-2 gap-3 item-cart" id="${this.categoria + this.numeroItem}">
+        document.getElementById('items-cart').innerHTML += `<div class="d-flex justify-content-between p-2 gap-3 item-cart" id="${this.categoria + this.numeroItem}">
                                                              <span class="fw-bold">${this.descripcionCart}</span>
-                                                             <div>
+                                                             <div class="responsive-cart-eliminar">
                                                                <span class="me-2">$ ${this.precio}</span>
                                                                <button type="button" class="btn btn-danger
                                                                " onclick="${this.categoria + this.numeroItem}.btnEliminar()">Eliminar</button>

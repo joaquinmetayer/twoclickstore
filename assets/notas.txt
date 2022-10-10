@@ -1,7 +1,5 @@
 in coffee:
 
-- filtro de productos
-- carrito en mobile responsive
 - quitar el codigo que no uso
 - comentar + ordenar
 - felicitaciones que habra en otra ventana
