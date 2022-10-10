@@ -1,3 +1,4 @@
+// clase para los items del chop
 class ShoopItems{
     constructor(nombre, descripcion, categoria, numeroItem, precio, descripcionCart){
         this.nombre = nombre,
@@ -24,6 +25,7 @@ class ShoopItems{
                                             </div>
                                         </div>`
     }
+    // agrego item al cart
     addToCartItem(){
         document.getElementById('items-cart').innerHTML += `<div class="d-flex justify-content-between p-2 gap-3 item-cart" id="${this.categoria + this.numeroItem}">
                                                              <span class="fw-bold">${this.descripcionCart}</span>
@@ -34,9 +36,13 @@ class ShoopItems{
                                                              </div>
                                                            </div>`
         document.getElementById(`un-item-msj${this.categoria + this.numeroItem}`).innerText = `Solo puedes agregar uno` 
-
+        
+        // sumo el valor total del carrito
         sumItemsCart += this.precio
+        // sumo contador items e imprimo
         countItemsCart += 1
+        document.getElementById('btn-carrito-counter').innerHTML = countItemsCart
+        // inserto total y muestro lo que sigue
         insertTotalCart.innerHTML = sumItemsCart
         totalContainer.style.display = 'flex'
         retirosLocal.style.display = 'flex'
@@ -46,18 +52,16 @@ class ShoopItems{
         // llamo a que calcule de nuevo para actualizar valor 
         pay('usd')
         
+        // desabilito boton cuando le dan a agregar
         document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.add(`disabled`)
 
+        // habilito los botones para pagar
         if(countItemsCart == 1){
             document.getElementById("currency-btn01").classList.remove(`disabled`)
             document.getElementById("currency-btn02").classList.remove(`disabled`)
         }
-        
-        document.getElementById('btn-carrito-counter').innerHTML = countItemsCart
-
-        //llamo pagar para que actualice la cotizacion
-        
     }
+    // elimino items del carrito
     btnEliminar(){
         document.getElementById(`${this.categoria + this.numeroItem}`).remove()
         document.getElementById(`un-item-msj${this.categoria + this.numeroItem}`).innerHTML = `<span style="visibility: hidden;">oculto</span>` 
@@ -68,17 +72,16 @@ class ShoopItems{
         document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.remove(`disabled`)
         document.getElementById('btn-carrito-counter').innerHTML = countItemsCart
 
+        // si no hay nada en el carrito oculto 
         if(countItemsCart == 0){
             document.getElementById('btn-carrito-counter').innerHTML = ``
-            document.getElementById("currency-btn01").classList.add(`disabled`)
-            document.getElementById("currency-btn02").classList.add(`disabled`)
             pagoSena.style.display = 'none'
             precioFinal.style.display = 'none'
             totalContainer.style.display = 'none'
             retirosLocal.style.display = 'none'
             conQueAbono.style.display = 'none'
             emptyItem.style.display = 'flex'
-          }else if(countItemsCart >= 1){
+          }else if(countItemsCart >= 1){ // si hay mas de uno muestro
             pagoSena.style.display = 'flex'
             precioFinal.style.display = 'block'
             totalContainer.style.display = 'flex'

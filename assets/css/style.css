@@ -1,5 +1,6 @@
 *{
   scroll-behavior: smooth;
+  user-select: none;
 }
 .hero-container{
   min-height: 83vh;

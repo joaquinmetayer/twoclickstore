@@ -19,21 +19,21 @@ var compraUSD = 0
 var senaPesos = 0
 var cartUSD = 0
 
-
 // btn filtro producto
 function filterProducts(str){
+    // llamo al primer item con la clase airpods
     itemsAirpods = document.getElementsByClassName('airpods')[0]
-    allsAirpods = document.getElementsByClassName('airpods')
-
     itemsIphone = document.getElementsByClassName('iphone')[0]
-    allsIphone = document.getElementsByClassName('iphone')
-
     itemsIpad = document.getElementsByClassName('ipad')[0]
-    allsIpad = document.getElementsByClassName('ipad')
-
     itemsMacbook = document.getElementsByClassName('macbook')[0]
-    allsMacbook = document.getElementsByClassName('macbook')
 
+    // genero otro con misma clase para iterar
+    allsAirpods = document.getElementsByClassName('airpods')
+    allsIphone = document.getElementsByClassName('iphone')
+    allsIpad = document.getElementsByClassName('ipad')
+    allsMacbook = document.getElementsByClassName('macbook')
+    
+    // si coincide muestro y oculto
     switch(str){
         case 'airpods':
             for (const itemsMacbook of allsMacbook) {
@@ -128,6 +128,8 @@ function pay(str){
     pagoSena.style.display = 'flex'
 }
 
+
+
 // funcion que cuando le de a pagar en pesos cal y me guarde en variable
 function cartConvertPesos(str){
     //convierto a numero
@@ -147,6 +149,8 @@ function getActualUSDPrice(){
     //compraUSD =
 }
 
+
+
 // funcion para sacar el 10% en pesos y que me lo ponga en el boton
 function calculoSena(int){
     senaPesos = cartPesos * 0.1
@@ -162,4 +166,3 @@ function pagoRealizado(){
     dolaresOPesos.style.display = 'none'
     precioFinal.style.display = 'none'
 }
-

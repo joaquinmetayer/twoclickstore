@@ -1,7 +1,5 @@
 in coffee:
 
-- quitar el codigo que no uso
-- comentar + ordenar
 - felicitaciones que habra en otra ventana
 
 Tarde:
