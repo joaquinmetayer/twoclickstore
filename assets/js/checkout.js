@@ -23,7 +23,6 @@ var cartUSD = 0
 function pay(str){
     totalCart = document.getElementById('total-cart').innerText
 
-    window.location = "#carrito"
     // convirtiendo a pesos
     cartConvertPesos(totalCart)
     // muestro valor de sena 

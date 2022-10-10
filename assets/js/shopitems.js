@@ -87,20 +87,11 @@ class ShoopItems{
             emptyItem.style.display = 'none'
             pay('usd')
           }
-        }
-        
+        }     
 }
 
 var sumItemsCart = 0
 var countItemsCart = 0
-const items = [] 
 
-items.push(macbook1 = new ShoopItems("14‑inch MacBook Pro - Space Gray", "Apple M1 Pro with 8-core CPU, 14-core GPU, 16-core Neural Engine, 16GB unified memory, 512GB SSD storage" , "macbook", 1, 1999, "14‑inch MacBook Pro 16GB 512GB"))
-items.push(macbook2 = new ShoopItems("14‑inch MacBook Pro - Space Gray", "Apple M1 Pro with 8-core CPU, 14-core GPU, 16-core Neural Engine 32GB unified memory 1TB SSD storage" , "macbook", 2, 2599, "14‑inch MacBook Pro 32GB 1TB"))
-
-// itero para crear los productos
-for (const ShoopItems of items){
-  ShoopItems.createItem()
-}
 
 

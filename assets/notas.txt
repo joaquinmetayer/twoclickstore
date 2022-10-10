@@ -1,9 +1,9 @@
-
-agregar todos los productos
 filtro de productos
 
+comentar todo el codigo
 
 de la parte funcional que mas queda?
 - calculo del dolar de hoy con api
+- modal cuando agrego un item?
+- felicitaciones que habra en otra ventana
 
-comentar todo el codigo
