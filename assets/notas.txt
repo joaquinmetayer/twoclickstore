@@ -1,23 +1,31 @@
 Tarde:
 
-2 diapo coder
-ver en que dispo voy a tradear
-2 diapo coder
-tercera entrega
-edit steps y plan para quotex
+JSON entender de diapo 10
+Aplicar lo que dice como actividad
 
 sl arriba 30min
-ubuntu compu asus
-sl abajo 30min
-affeit
+MR ROBOT
 
+1 diapo coder (11)
+repaso de esa diapo + aplicar lo que dice
+
+sl abajo 30min
+affeit + prender calefon + merienda
+
+1 diapo coder
+repaso de esa diapo + aplicar lo que dice
+
+MR ROBOT
+TERCERA ENTREGA
 
 Martes por la manana:
+ubuntu compu asus
 
+Martes por la tarde:
 4 diapo + entrega final
 
+------------------------------------
 de la parte funcional que mas queda?
 - calculo del dolar de hoy con api
 - modal cuando agrego un item?
 - afinar responsive
-
