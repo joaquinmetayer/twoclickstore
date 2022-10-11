@@ -40,7 +40,7 @@ class ShoopItems{
         // sumo el valor total del carrito
         sumItemsCart += this.precio
         // sumo contador items e imprimo
-        countItemsCart += 1
+        countItemsCart++
         document.getElementById('btn-carrito-counter').innerHTML = countItemsCart
         // inserto total y muestro lo que sigue
         insertTotalCart.innerHTML = sumItemsCart
@@ -76,7 +76,7 @@ class ShoopItems{
         document.getElementById(`un-item-msj${this.categoria + this.numeroItem}`).innerHTML = `<span style="visibility: hidden;">oculto</span>` 
 
         sumItemsCart -= this.precio
-        countItemsCart -= 1
+        countItemsCart--
         insertTotalCart.innerHTML = sumItemsCart
         document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.remove(`disabled`)
         document.getElementById('btn-carrito-counter').innerHTML = countItemsCart

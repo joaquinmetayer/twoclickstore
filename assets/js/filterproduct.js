@@ -44,7 +44,6 @@ function filterProducts(str){
             for (const itemsAirpods of allsAirpods) {
                 itemsAirpods.style.display = 'flex'
             }
-            console.log('hola')
             break
         case 'iphone':
             for (const itemsMacbook of allsMacbook) {
