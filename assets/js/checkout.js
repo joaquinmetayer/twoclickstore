@@ -91,3 +91,17 @@ function pagoRealizado(){
 
     window.location = "#pago-exitoso"
 }
+
+// imprimo en consola cada 10 segundos cuanto 
+// es el total de tiempo que lleva en el sitio
+tiempoEnSitio = 0
+// activo el contador
+setInterval(() => {
+    tiempoEnSitio++
+}, 1000)
+// cada 10 segundos me imprimie
+setInterval(() => {
+    console.log('Lleva ' + tiempoEnSitio + ' segundos en este sitio')
+}, 10000)
+
+
