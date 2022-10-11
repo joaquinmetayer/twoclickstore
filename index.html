@@ -42,7 +42,7 @@
   </div>
 
   <!-- product type filter -->
-  <div class="container-fluid overflow-hidden row text-center d-flex justify-content-center aling-items-center pb-5 mt-2 mb-2 filter">
+  <div class="container-fluid overflow-hidden text-center d-flex justify-content-center aling-items-center pb-5 mt-2 mb-2 filter">
     <!-- card airpods -->
     <div class="col-md-2 col-sm-5 rounded d-flex flex-column justify-content-center align-items-center" id="btn-airpods">
       <img src="./assets/img/cards/card-airpods.png" class="p-3">
@@ -115,12 +115,12 @@
             <button type="button" class="btn btn-outline-info m-2 p-3 fw-bold w-50 shadow-lg fs-5" onclick="pay('pesos')" id="currency-btn02">Pesos Argentinos</button>
       </div>
     </div>
-
+    
     <!-- final price -->
     <p class="text-center pt-3 fs-1 fw-bold" id="precio-final">Precio compra final $ <span id="precio-final-converted"></span></p>
     
     <!-- pay seña -->
-    <div class="w-100 justify-content-center flex-column align-items-center" id="pago-sena">
+    <div class="justify-content-center flex-column align-items-center ps-2 pe-2 border-bottom" id="pago-sena">
       <button type="button" class="btn btn-primary mt-2 p-3 fw-bold shadow-lg fs-3 w-75" onclick="pagoRealizado()">Pagar seña de $ <span id="sena-price"></span> Pesos</button>
       <p class="text-muted pt-3 ms-2 fw-lighter">* El valor de la seña es calculado en base al 10% de la compra</p>
     </div>

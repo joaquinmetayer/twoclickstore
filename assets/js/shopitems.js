@@ -50,7 +50,7 @@ class ShoopItems{
         emptyItem.style.display = 'none'
 
         // llamo a que calcule de nuevo para actualizar valor 
-        pay('usd')
+        pay()
         
         // desabilito boton cuando le dan a agregar
         document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.add(`disabled`)
@@ -97,7 +97,7 @@ class ShoopItems{
             retirosLocal.style.display = 'block'
             conQueAbono.style.display = 'block'
             emptyItem.style.display = 'none'
-            pay('usd')
+            pay()
           }
 
           console.log("Porque?") 

@@ -12,6 +12,7 @@ emptyItem = document.getElementById('empty-item')
 precioConvertido = document.getElementById('precio-final-converted')
 pagoExitoso = document.getElementById('pago-exitoso')
 shopItemsContainer = document.getElementById('shop-items-container')
+mostrarPrecioFinal = document.getElementById('mostrando-precio-final')
 
 // variables
 var cartPesos = 0
@@ -22,7 +23,6 @@ var cartUSD = 0
 // con que queres pagar?
 function pay(str){
     totalCart = document.getElementById('total-cart').innerText
-
     // convirtiendo a pesos
     cartConvertPesos(totalCart)
     // muestro valor de sena 
@@ -33,9 +33,12 @@ function pay(str){
     }else if(str == "usd"){
         precioConvertido.innerHTML = ` ${cartUSD} Dólares `
     }
-    // muestro precio final y el btn de pago
-    precioFinal.style.display = 'block'
-    pagoSena.style.display = 'flex'
+    // muestro precio final y el btn de pago si seleccionarin divisa
+    if(str == "pesos" || str == "usd"){
+        precioFinal.style.display = 'block'
+        pagoSena.style.display = 'flex'
+    }
+   
 
 }
 
