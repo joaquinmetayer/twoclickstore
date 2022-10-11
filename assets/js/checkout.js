@@ -23,6 +23,7 @@ var cartUSD = 0
 // con que queres pagar?
 function pay(str){
     totalCart = document.getElementById('total-cart').innerText
+
     // convirtiendo a pesos
     cartConvertPesos(totalCart)
     // muestro valor de sena 
@@ -38,7 +39,13 @@ function pay(str){
         precioFinal.style.display = 'block'
         pagoSena.style.display = 'flex'
         console.log("Finaliza tu compra!")
+    }else{
+        // vuelvo a ocultar por si se habilitaron anteriormente
+        precioFinal.style.display = 'none'
+        pagoSena.style.display = 'none'
     }
+
+    
 }
 
 // funcion que cuando le de a pagar en pesos cal y me guarde en variable
