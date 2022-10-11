@@ -31,9 +31,11 @@ for (const ShoopItems of items){
     ShoopItems.createItem()
   }
 
-//desestructuracion de arrai de productos
+// desestructuracion de arrai de productos
 const [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21] = items
-console.log(p1)
+
+// uso spread para imprimir todos los productos
+console.log(...items)
 
 /* bucle for por si quiero iterar sobre el arrai e imprimir en consola
  * for(i = 0; i < items.length; i++ ){

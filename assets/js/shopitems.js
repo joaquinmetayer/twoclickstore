@@ -38,7 +38,7 @@ class ShoopItems{
         document.getElementById(`un-item-msj${this.categoria + this.numeroItem}`).innerText = `Solo puedes agregar uno` 
         
         // sumo el valor total del carrito
-        sumItemsCart += this.precio
+        sumItemsCart = sumItemsCart + this.precio
         // sumo contador items e imprimo
         countItemsCart++
         document.getElementById('btn-carrito-counter').innerHTML = countItemsCart

@@ -1,8 +1,10 @@
 diapositiva + tasks
-   desestructuracion
-   spread
 13
   que cuando seleccione un producto de filtro me lo subsraye
+  agregar en algun ligar el detalle con la cotizacion del dolar y la hora y fecha de actualizacion
+  uso luxon para obtener la fecha y hora cuanod calcule el precio del dolar
+
+  
 14
 15
 16

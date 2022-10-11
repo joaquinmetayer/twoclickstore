@@ -29,9 +29,9 @@ function pay(str){
     calculoSena(totalCart)
     // imprimo valores
     if(str == "pesos"){
-        precioConvertido.innerHTML = ` ${cartPesos} Pesos `
+        precioConvertido.innerHTML = `${cartPesos} Pesos`
     }else if(str == "usd"){
-        precioConvertido.innerHTML = ` ${cartUSD} Dólares `
+        precioConvertido.innerHTML = `${cartUSD} Dólares`
     }
     // muestro precio final y el btn de pago si seleccionarin divisa
     if(str == "pesos" || str == "usd"){
