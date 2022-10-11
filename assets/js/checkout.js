@@ -21,6 +21,11 @@ var compraUSD = 0
 var senaPesos = 0
 var cartUSD = 0
 
+// uso libreria Lux para traer la fecha
+var DateTime = luxon.DateTime;
+const dt = DateTime.now();
+dt.toLocaleString() // 25/1/2022
+
 // con que queres pagar?
 function pay(str){
     totalCart = document.getElementById('total-cart').innerText
@@ -45,14 +50,7 @@ function pay(str){
         precioFinal.style.display = 'none'
         pagoSena.style.display = 'none'
     }
-
-    
 }
-
-
-
-var DateT = luxon.DateTime;
-console.log(DateT.toLocaleString())
 
 
 // funcion que cuando le de a pagar en pesos cal y me guarde en variable
@@ -67,9 +65,8 @@ function cartConvertPesos(str){
     // cambiar el 280 por el valor de compra del dia del USD que es compraUSD
     cartPesos = 280 * cartUSD
 
-    dateLux.innerHTML = DateTime.toLocaleString()
-
-    
+    // muestro la fecha del pedido de cotizacion
+    dateLux.innerHTML = dt.toLocaleString() + ' a las ' + dt.toLocaleString(DateTime.TIME_SIMPLE)  
 }
 
 // que me busque el precio actual de la api 
