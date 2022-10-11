@@ -1,10 +1,7 @@
 diapositiva + tasks
-14 1HR
-15 2HR
-16 2HR
+15
+  calculo del dolar de hoy con API
+16
   repaso de todas las diapos
-------------------------------------
-de la parte funcional que mas queda?
-- calculo del dolar de hoy con API
 
-ANTES DEL SABADO HACER LA ENTREGA FINAL y dejarlo lsito
+ANTES DEL VIERNES HACER LA ENTREGA FINAL y dejarlo lsito
