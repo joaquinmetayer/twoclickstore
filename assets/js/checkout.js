@@ -13,6 +13,7 @@ precioConvertido = document.getElementById('precio-final-converted')
 pagoExitoso = document.getElementById('pago-exitoso')
 shopItemsContainer = document.getElementById('shop-items-container')
 mostrarPrecioFinal = document.getElementById('mostrando-precio-final')
+dateLux = document.getElementById('date-lux')
 
 // variables
 var cartPesos = 0
@@ -48,6 +49,12 @@ function pay(str){
     
 }
 
+
+
+var DateT = luxon.DateTime;
+console.log(DateT.toLocaleString())
+
+
 // funcion que cuando le de a pagar en pesos cal y me guarde en variable
 function cartConvertPesos(str){
     //convierto a numero
@@ -59,6 +66,10 @@ function cartConvertPesos(str){
     // lo multiplico y guardo en variable
     // cambiar el 280 por el valor de compra del dia del USD que es compraUSD
     cartPesos = 280 * cartUSD
+
+    dateLux.innerHTML = DateTime.toLocaleString()
+
+    
 }
 
 // que me busque el precio actual de la api 

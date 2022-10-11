@@ -1,9 +1,8 @@
 diapositiva + tasks
   uso luxon para obtener la fecha y hora cuanod calcule el precio del dolar
-
-14
-15
-16
+14 2HR
+15 2HR
+16 2HR
   repaso de todas las diapos
 ------------------------------------
 de la parte funcional que mas queda?

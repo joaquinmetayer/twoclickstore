@@ -78,7 +78,6 @@ class ShoopItems{
         document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.remove(`disabled`)
         document.getElementById('btn-carrito-counter').innerHTML = countItemsCart
 
-        
         // si no hay nada en el carrito oculto 
         if(countItemsCart == 0){
             document.getElementById('btn-carrito-counter').innerHTML = ``
