@@ -1,5 +1,6 @@
 diapositiva + tasks
-12 estudio
+   desestructuracion
+   spread
 13
   que cuando seleccione un producto de filtro me lo subsraye
 14
@@ -9,3 +10,5 @@ diapositiva + tasks
 ------------------------------------
 de la parte funcional que mas queda?
 - calculo del dolar de hoy con API
+
+ANTES DEL SABADO HACER LA ENTREGA FINAL y dejarlo lsito

@@ -37,16 +37,15 @@ function pay(str){
     if(str == "pesos" || str == "usd"){
         precioFinal.style.display = 'block'
         pagoSena.style.display = 'flex'
+        console.log("Finaliza tu compra!")
     }
-   
-
 }
 
 // funcion que cuando le de a pagar en pesos cal y me guarde en variable
 function cartConvertPesos(str){
     //convierto a numero
     cartUSD = parseFloat(str)
-    console.log("El total del carrito es $ " + cartUSD)
+    console.log("Total carrito: $" + cartUSD)
     // llamo a api para obtener el valor actual guardandolo en variable
     getActualUSDPrice()
     
@@ -65,7 +64,6 @@ function getActualUSDPrice(){
 function calculoSena(int){
     senaPesos = cartPesos * 0.1
     senaContainer.innerHTML = senaPesos
-    console.log("Que haces leyendo esto? Finaliza la compra!")
 }
 // cuando realiza el pago
 function pagoRealizado(){

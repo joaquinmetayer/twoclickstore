@@ -60,13 +60,10 @@ class ShoopItems{
         cuantoQuieroGastar = JSON.parse(localStorage.getItem("Agregago en carrito"))
         // guardo en variable todo lo que agrego e imprimo mensaje
         cuantoQuieroGastar += this.precio
-        console.log("Todos los items que agregaste suman $ " + cuantoQuieroGastar + " dolares... cuantos billetes de $100 pesos no?!")
+        console.log("Valor total agregados: $" + cuantoQuieroGastar)
         // declaro y paso a JSON (convierto a string)
         var cuantoQuieroGastarJSON = JSON.stringify(cuantoQuieroGastar)
-        console.log(cuantoQuieroGastarJSON)
-        localStorage.setItem("Agregago en carrito", cuantoQuieroGastarJSON)
-        console.log("Esto fue almacenado en local storage")
-        console.log("Maricon el que lee! (no te ofendas)")
+        localStorage.setItem("AgregagoEnCarrito", cuantoQuieroGastarJSON)
         // guardo esta variable en local
 
     }
@@ -99,10 +96,7 @@ class ShoopItems{
             emptyItem.style.display = 'none'
             pay()
           }
-
-          console.log("Porque?") 
         }
-        
 }
 
 var sumItemsCart = 0
