@@ -27,7 +27,7 @@ img{
 .filter div:hover{
   cursor: pointer;
 }
-.filter-link:hover{
+.filter-link:hover, .underline{
   text-decoration: underline;
 }
 .col-md-2 img{
