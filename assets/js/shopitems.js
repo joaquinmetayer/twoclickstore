@@ -55,14 +55,19 @@ class ShoopItems{
         // desabilito boton cuando le dan a agregar
         document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.add(`disabled`)
 
-        // habilito los botones para pagar
-        if(countItemsCart == 1){
-            document.getElementById("currency-btn01").classList.remove(`disabled`)
-            document.getElementById("currency-btn02").classList.remove(`disabled`)
-        }
 
-        // con local storage que guarde mi carrito hasta que no le den al volver a comprar que se resetea
-
+        // obtengo los datos del LS
+        cuantoQuieroGastar = JSON.parse(localStorage.getItem("Agregago en carrito"))
+        // guardo en variable todo lo que agrego e imprimo mensaje
+        cuantoQuieroGastar += this.precio
+        console.log("Todos los items que agregaste suman $ " + cuantoQuieroGastar + " dolares... cuantos billetes de $100 pesos no?!")
+        // declaro y paso a JSON (convierto a string)
+        var cuantoQuieroGastarJSON = JSON.stringify(cuantoQuieroGastar)
+        console.log(cuantoQuieroGastarJSON)
+        localStorage.setItem("Agregago en carrito", cuantoQuieroGastarJSON)
+        console.log("Esto fue almacenado en local storage")
+        console.log("Maricon el que lee! (no te ofendas)")
+        // guardo esta variable en local
 
     }
     // elimino items del carrito
@@ -94,11 +99,12 @@ class ShoopItems{
             emptyItem.style.display = 'none'
             pay('usd')
           }
-        }     
+
+          console.log("Porque?") 
+        }
+        
 }
 
 var sumItemsCart = 0
 var countItemsCart = 0
-
-
-
+var cuantoQuieroGastar = 0
