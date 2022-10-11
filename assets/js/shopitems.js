@@ -38,7 +38,7 @@ class ShoopItems{
         document.getElementById(`un-item-msj${this.categoria + this.numeroItem}`).innerText = `Solo puedes agregar uno` 
         
         // sumo el valor total del carrito
-        sumItemsCart = sumItemsCart + this.precio
+        sumItemsCart += this.precio
         // sumo contador items e imprimo
         countItemsCart++
         document.getElementById('btn-carrito-counter').innerHTML = countItemsCart
@@ -56,15 +56,16 @@ class ShoopItems{
         document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.add(`disabled`)
 
 
-        // obtengo los datos del LS
-        cuantoQuieroGastar = JSON.parse(localStorage.getItem("Agregago en carrito"))
-        // guardo en variable todo lo que agrego e imprimo mensaje
+        // obtengo los datos del LS en it
+        cuantoQuieroGastar = JSON.parse(localStorage.getItem("AgregagoEnCarrito"))
+        // guardo en variable sumando lo que agrego
         cuantoQuieroGastar += this.precio
-        console.log("Valor total agregados: $" + cuantoQuieroGastar)
         // declaro y paso a JSON (convierto a string)
         var cuantoQuieroGastarJSON = JSON.stringify(cuantoQuieroGastar)
-        localStorage.setItem("AgregagoEnCarrito", cuantoQuieroGastarJSON)
         // guardo esta variable en local
+        localStorage.setItem("AgregagoEnCarrito", cuantoQuieroGastarJSON)
+        // imrpimo 
+        console.log("Valor total agregados: $" + cuantoQuieroGastar)
 
     }
     // elimino items del carrito
