@@ -55,7 +55,6 @@ class ShoopItems{
         // desabilito boton cuando le dan a agregar
         document.getElementById(`btn${this.categoria + this.numeroItem}`).classList.add(`disabled`)
 
-
         // obtengo los datos del LS en it
         cuantoQuieroGastar = JSON.parse(localStorage.getItem("AgregagoEnCarrito"))
         // guardo en variable sumando lo que agrego
