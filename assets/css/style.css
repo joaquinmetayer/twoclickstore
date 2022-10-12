@@ -1,6 +1,7 @@
 *{
   scroll-behavior: smooth;
   user-select: none;
+  box-sizing: border-box;
 }
 .hero-container{
   min-height: 83vh;
@@ -67,6 +68,12 @@ iframe{
 }
 #dolares-pesos{
   display: flex;
+}
+#pago-sena{
+  padding: 0 20px 15px 20px !important;
+} 
+#precio-final{
+  padding: 20px 20px 0 20px !important;
 }
 #pago-exitoso{
   min-height: 97vh;

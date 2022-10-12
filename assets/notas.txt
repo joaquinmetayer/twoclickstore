@@ -1,7 +1,14 @@
-diapositiva + tasks
-15
   calculo del dolar de hoy con API
-16
+  promesa con fetch
+  entrega completa? probar de romper la app
+  publicar en portfolio + index + resumen
+
+  pasar todo el js del html al js
   repaso de todas las diapos
+
+
+-------------------------------
+agrgar el var / const / let?
+
 
 ANTES DEL VIERNES HACER LA ENTREGA FINAL y dejarlo lsito

@@ -58,28 +58,22 @@ function cartConvertPesos(str){
     //convierto a numero
     cartUSD = parseFloat(str)
     console.log("Total carrito: $" + cartUSD)
-    // llamo a api para obtener el valor actual guardandolo en variable
-    getActualUSDPrice()
+    // llamo a funcion api para obtener el valor actual guardandolo en variable
+    getDolarPrice()
     
     // lo multiplico y guardo en variable
-    // cambiar el 280 por el valor de compra del dia del USD que es compraUSD
-    cartPesos = 280 * cartUSD
+    cartPesos = dolarPriceBuy * cartUSD
 
     // muestro la fecha del pedido de cotizacion
     dateLux.innerHTML = dt.toLocaleString() + ' a las ' + dt.toLocaleString(DateTime.TIME_SIMPLE)  
 }
 
-// que me busque el precio actual de la api 
-function getActualUSDPrice(){
-
-    //compraUSD =
-}
-
 // funcion para sacar el 10% en pesos y que me lo ponga en el boton
-function calculoSena(int){
+function calculoSena(){
     senaPesos = cartPesos * 0.1
     senaContainer.innerHTML = senaPesos
 }
+
 // cuando realiza el pago
 function pagoRealizado(){
     pagoExitoso.style.display = 'flex'
@@ -90,6 +84,14 @@ function pagoRealizado(){
     precioFinal.style.display = 'none'
 
     window.location = "#pago-exitoso"
+}
+
+// buscando la cotizacion del dolar compra de momento
+async function getDolarPrice(){
+    const dolarPrice = await fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales");
+    const dolarData = await dolarPrice.json();
+  
+    const dolarPriceBuy = parseInt(dolarData[1].casa.compra)
 }
 
 // imprimo en consola cada 10 segundos cuanto 
