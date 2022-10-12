@@ -1,10 +1,11 @@
   promesa con fetch
+  agregar un formulario de contacto con email.js
+  readme completar con todo lo que tiene
   entrega completa? probar de romper la app
   publicar en portfolio + index + resumen
 
   pasar todo el js del html al js
   repaso de todas las diapos
-
 
 -------------------------------
 agrgar el var / const / let?
