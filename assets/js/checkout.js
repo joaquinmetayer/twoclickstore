@@ -52,25 +52,9 @@ function pay(str){
     }
 }
 
-
-// funcion que cuando le de a pagar en pesos cal y me guarde en variable
-function cartConvertPesos(str){
-    //convierto a numero
-    cartUSD = parseFloat(str)
-    console.log("Total carrito: $" + cartUSD)
-    // llamo a funcion api para obtener el valor actual guardandolo en variable
-    getDolarPrice()
-    
-    // lo multiplico y guardo en variable
-    cartPesos = dolarPriceBuy * cartUSD
-
-    // muestro la fecha del pedido de cotizacion
-    dateLux.innerHTML = dt.toLocaleString() + ' a las ' + dt.toLocaleString(DateTime.TIME_SIMPLE)  
-}
-
 // funcion para sacar el 10% en pesos y que me lo ponga en el boton
 function calculoSena(){
-    senaPesos = cartPesos * 0.1
+    senaPesos = Math.floor(cartPesos * 0.1)
     senaContainer.innerHTML = senaPesos
 }
 
@@ -82,16 +66,24 @@ function pagoRealizado(){
     pagoSena.style.display = 'none'
     dolaresOPesos.style.display = 'none'
     precioFinal.style.display = 'none'
-
     window.location = "#pago-exitoso"
 }
 
 // buscando la cotizacion del dolar compra de momento
-async function getDolarPrice(){
+async function cartConvertPesos(str){
+    //convierto a numero
+    cartUSD = parseFloat(str)
+    console.log("Total carrito: $" + cartUSD)
+    // llamo a funcion api para obtener el valor actual guardandolo en variable
     const dolarPrice = await fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales");
     const dolarData = await dolarPrice.json();
-  
+    // paso a nu el valor
     const dolarPriceBuy = parseInt(dolarData[1].casa.compra)
+    // lo multiplico y guardo en variable
+    cartPesos = dolarPriceBuy * cartUSD
+    // muestro la fecha del pedido de cotizacion y la cotizacion
+    dateLux.innerHTML = dt.toLocaleString() + ' a las ' + dt.toLocaleString(DateTime.TIME_SIMPLE)
+    document.getElementById('cotizacion-usd').innerHTML = dolarPriceBuy
 }
 
 // imprimo en consola cada 10 segundos cuanto 

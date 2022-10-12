@@ -1,4 +1,3 @@
-  calculo del dolar de hoy con API
   promesa con fetch
   entrega completa? probar de romper la app
   publicar en portfolio + index + resumen
