@@ -1,9 +1,11 @@
 # Two Click Store
 
-E-Commerce basado en tienda de productos Apple, todo integrado en una landing page.
+E-Commerce basado en tienda de productos Apple, todo integrado en una pagina.
 
 Lenguajes HTML / CSS / Vanilla JavaScript
 Librerias Bootstrap / Luxon
+
+Consumo de API de cotización Dólar compra para realizar la conversion al momento de cuando el usuario le de a pagar
 
 Live view en https://jmtwoclickstore.netlify.app/
 
