@@ -71,9 +71,7 @@
   </div>
   
   <!-- shop items container -->
-  <div class="overflow-hidden p-4 m-3 shadow-lg text-center bg-light rounded p-2 gap-3 flex-wrap align-items-center items-container" id="shop-items-container">
-       
-  </div>
+  <div class="overflow-hidden p-4 m-3 shadow-lg text-center bg-light rounded p-2 gap-3 flex-wrap align-items-center items-container" id="shop-items-container"></div>
 
   <!-- carrito -->
   <div class="m-3" id="carrito">
@@ -111,8 +109,8 @@
      
       <!-- currency -->
       <div class="container-fluid justify-content-center" id="dolares-pesos">
-            <button type="button" class="btn btn-outline-success m-2 p-3 fw-bold w-50 shadow-lg fs-5" onclick="pay('usd')" id="currency-btn01">Dólares</button>
-            <button type="button" class="btn btn-outline-info m-2 p-3 fw-bold w-50 shadow-lg fs-5" onclick="pay('pesos')" id="currency-btn02">Pesos Argentinos</button>
+            <button type="button" class="btn btn-outline-success m-2 p-3 fw-bold w-50 shadow-lg fs-5" id="currency-btn01">Dólares</button>
+            <button type="button" class="btn btn-outline-info m-2 p-3 fw-bold w-50 shadow-lg fs-5" id="currency-btn02">Pesos Argentinos</button>
       </div>
     </div>
     
@@ -124,7 +122,7 @@
     
     <!-- pay seña -->
     <div class="justify-content-center flex-column align-items-center border-bottom" id="pago-sena">
-      <button type="button" class="btn btn-primary mt-2 p-3 fw-bold shadow-lg fs-3 w-75" onclick="pagoRealizado()">Pagar seña de $ <span id="sena-price"></span> Pesos</button>
+      <button type="button" class="btn btn-primary mt-2 p-3 fw-bold shadow-lg fs-3 w-75" id="pagar-sena">Pagar seña de $ <span id="sena-price"></span> Pesos</button>
       <p class="text-muted pt-3 fw-lighter">* El valor de la seña es calculado en base al 10% de la compra</p>
     </div>
 
@@ -134,7 +132,7 @@
       <p class="fs-5 text-center pb-4">Tu pedido estará listo para que retires en nuestro local dentro de las 24 horas.
       <br>Solo debes asistir con tu DNI y el dinero pendiente para finalizar el pago.
       </p>
-      <button type="button" class="btn btn-primary mt-2 p-3 fw-bold shadow-lg fs-4" onClick="location.href='/index.html'">Volver a comprar</button>
+      <button type="button" class="btn btn-primary mt-2 p-3 fw-bold shadow-lg fs-4" id="volver-comprar">Volver a comprar</button>
     </div>
 
   </div>

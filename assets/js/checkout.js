@@ -4,7 +4,7 @@ totalContainer = document.getElementById('total-container')
 retirosLocal = document.getElementById('retiros-local')
 insertTotalCart = document.getElementById('total-cart')
 conQueAbono = document.getElementById('con-que')
-dolaresOPesos =document.getElementById('dolares-pesos')
+dolaresOPesos = document.getElementById('dolares-pesos')
 precioFinal = document.getElementById('precio-final')
 pagoSena = document.getElementById('pago-sena')
 senaContainer = document.getElementById('sena-price')
@@ -14,6 +14,16 @@ pagoExitoso = document.getElementById('pago-exitoso')
 shopItemsContainer = document.getElementById('shop-items-container')
 mostrarPrecioFinal = document.getElementById('mostrando-precio-final')
 dateLux = document.getElementById('date-lux')
+currentyUsd = document.getElementById('currency-btn01')
+currentyArs = document.getElementById('currency-btn02')
+volverComprar = document.getElementById('volver-comprar')
+pagarSena = document.getElementById('pagar-sena')
+
+// agrego eventos a botones
+currentyUsd.onclick = () => (pay('usd'))
+currentyArs.onclick = () => (pay('pesos'))
+volverComprar.onclick = () => (location.href='/index.html')
+pagarSena.onclick = () => (pagoRealizado())
 
 // variables
 var cartPesos = 0
