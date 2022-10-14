@@ -63,7 +63,8 @@ iframe{
 #precio-final, #pago-sena, 
 #pago-exitoso, #total-container, 
 #retiros-local, #con-que, 
-#mostrando-precio-final{
+#mostrando-precio-final, 
+#error-api{
   display: none;
 }
 #dolares-pesos{
