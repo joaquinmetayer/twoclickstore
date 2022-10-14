@@ -21,7 +21,6 @@ const errorApi = document.getElementById('error-api');
 const errorPago = document.getElementById('error-pago')
 const formPago = document.getElementById('form');
 
-// agrego eventos a botones
 currentyUsd.onclick = () => (pay('usd'));
 currentyArs.onclick = () => (pay('pesos'));
 volverComprar.onclick = () => (location.href='/index.html');
@@ -32,10 +31,9 @@ var compraUSD = 0;
 var senaPesos = 0;
 var cartUSD = 0;
 
-// uso libreria Lux para traer la fecha
 var DateTime = luxon.DateTime;
 const dt = DateTime.now();
-dt.toLocaleString(); // 25/1/2022
+dt.toLocaleString();
 
 function pay(str){
     totalCart = document.getElementById('total-cart').innerText;
@@ -64,21 +62,14 @@ function calculoSena(){
     senaContainer.innerHTML = senaPesos;
 }
 
-// buscando la cotizacion del dolar compra de momento
 async function cartConvertPesos(str){
-    //convierto a numero
     cartUSD = parseFloat(str);
     console.log("Total carrito: $" + cartUSD);
-    // pruebo obtener cotizacion dolar, sino que imprima error en HTML
     try{
-        // llamo a funcion api para obtener el valor actual guardandolo en variable
         const dolarPrice = await fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales");
         const dolarData = await dolarPrice.json();
-        // paso a nu el valor
         const dolarPriceBuy = parseInt(dolarData[1].casa.compra);
-        // lo multiplico y guardo en variable
         cartPesos = dolarPriceBuy * cartUSD;
-        // muestro la fecha del pedido de cotizacion y la cotizacion
         dateLux.innerHTML = dt.toLocaleString() + ' a las ' + dt.toLocaleString(DateTime.TIME_SIMPLE);
         document.getElementById('cotizacion-usd').innerHTML = dolarPriceBuy;
     }catch{
@@ -93,7 +84,6 @@ tiempoEnSitio = 0;
 setInterval(() => {
     tiempoEnSitio++;
 }, 1000);
-// cada 10 segundos me imprimie
 setInterval(() => {
     console.log('Lleva ' + tiempoEnSitio + ' segundos en este sitio');
 }, 10000);
