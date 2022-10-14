@@ -64,7 +64,8 @@ iframe{
 #pago-exitoso, #total-container, 
 #retiros-local, #con-que, 
 #mostrando-precio-final, 
-#error-api, #error-pago, #form{
+#error-api, #error-pago, 
+#form{
   display: none;
 }
 #dolares-pesos{

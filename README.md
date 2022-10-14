@@ -1,4 +1,4 @@
-# Two Click Store
+# Two Click
 
 E-Commerce basado en tienda de productos Apple, todo integrado en una pagina.
 

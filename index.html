@@ -88,7 +88,6 @@
       </div>
      
       <span id="items-cart"></span>
-
     </div>
 
     <!-- total -->
@@ -124,21 +123,21 @@
     <!-- form -->
     <form id="form" class="justify-content-between align-items-center flex-column container-fluid border-bottom">
       <div class="row container-fluid">
-        <div class="col mb-3">
+        <div class="col mb-3 col-md-6 col-12">
           <label for="name" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre..." required>
         </div>
-        <div class="col mb-3">
+        <div class="col mb-3 col-md-6 col-12">
           <label for="surname" class="form-label">Apellido</label>
           <input type="text" class="form-control" id="surname" name="surname" placeholder="Tu apellido..." required>
         </div>
       </div>
       <div class="row container-fluid">
-        <div class="col mb-3 container-fluid">
+        <div class="col mb-3 container-fluid col-md-6 col-12">
           <label for="phone" class="form-label">Número de telefono</label>
           <input type="number" class="form-control" id="phone" name="phone" placeholder="Tu numero de telefono...">
         </div>
-        <div class="col mb-3">
+        <div class="col mb-3 col-md-6 col-12">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" name="email" placeholder="Tu email..." required>
         </div>
@@ -150,7 +149,6 @@
       </div>
     </form>
 
-   
     <!-- error al obtener el precio dolar -->
     <div class="justify-content-center border-bottom" id="error-api">
       <p class="pt-3 fs-3 fw-bold text-danger text-center">Error al cargar el precio! Comprueba tu conexión.</p>
@@ -166,11 +164,10 @@
 
     <!-- Error de pago -->
     <div class="w-100 m-0 p-5 justify-content-center align-items-center flex-column" id="error-pago">
-      <h2 class="text-center fs-1 fw-bold pt-4">😫  Error!  😩</h2>
+      <h2 class="text-center fs-1 fw-bold pt-4 text-danger">😫  Error!  😩</h2>
       <p class="fs-5 text-center">Hubo un error al enviar el pago, revisa tu conexión.</p>
       <button type="button" class="btn btn-primary mt-2 p-3 fw-bold shadow-lg fs-4" id="volver-comprar">Volver a comprar</button>
     </div>
-
   </div>
 
   <!-- ubicación -->

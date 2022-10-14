@@ -1,5 +1,4 @@
 function pagoRealizado(){
-    pagarSena.classList.add('disabled');
     emailjs.init('sV9Ajqlig0lkp_0dX');
     formPago
     .addEventListener('submit', function(event) {
@@ -8,6 +7,7 @@ function pagoRealizado(){
     const templateID = 'template_gqidwkg';
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
+        pagarSena.classList.add('disabled');
         console.log("Pago enviado!");
         pagoExitoso.style.display = 'flex';
         cartContainer.style.display = 'none';
@@ -17,6 +17,7 @@ function pagoRealizado(){
         precioFinal.style.display = 'none';
         window.location = "#pago-exitoso";
       }, (err) => {
+        pagarSena.classList.add('disabled');
         console.log('Error al enviar pago');
         errorPago.style.display = 'flex';
         pagoExitoso.style.display = 'none';

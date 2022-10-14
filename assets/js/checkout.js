@@ -37,7 +37,6 @@ dt.toLocaleString();
 
 function pay(str){
     totalCart = document.getElementById('total-cart').innerText;
-
     cartConvertPesos(totalCart);
     calculoSena(totalCart);
     if(str == "pesos"){
@@ -87,5 +86,3 @@ setInterval(() => {
 setInterval(() => {
     console.log('Lleva ' + tiempoEnSitio + ' segundos en este sitio');
 }, 10000);
-
-
