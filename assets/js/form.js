@@ -1,4 +1,6 @@
 function pagoRealizado(){
+    pagarSena.innerHTML = 'Enviando pago...'
+    pagarSena.classList.add('disabled');
     emailjs.init('sV9Ajqlig0lkp_0dX');
     formPago
     .addEventListener('submit', function(event) {

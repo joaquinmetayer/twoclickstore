@@ -62,7 +62,7 @@ function calculoSena(){
 }
 
 async function cartConvertPesos(str){
-    cartUSD = parseFloat(str);
+    cartUSD = parseInt(str);
     console.log("Total carrito: $" + cartUSD);
     try{
         const dolarPrice = await fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales");
