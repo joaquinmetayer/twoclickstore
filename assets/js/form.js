@@ -1,4 +1,8 @@
 function pagoRealizado(){
+  const formName = document.getElementById('name').value
+  const formSurname = document.getElementById('surname').value
+  const formEmail = document.getElementById('email').value
+  if(formName !== "" && formSurname !== "" && formEmail !== ""){
     pagarSena.innerHTML = 'Enviando pago...'
     pagarSena.classList.add('disabled');
     emailjs.init('sV9Ajqlig0lkp_0dX');
@@ -32,4 +36,6 @@ function pagoRealizado(){
         window.location = "#error-pago";
       });
     });
+  }
+   
 }
