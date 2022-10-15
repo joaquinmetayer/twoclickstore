@@ -74,6 +74,7 @@ async function cartConvertPesos(str){
     }catch{
         pagoSena.style.display = 'none';
         precioFinal.style.display = 'none';
+        formPago.style.display = 'none'
         errorApi.style.display = 'block';
     }
 }

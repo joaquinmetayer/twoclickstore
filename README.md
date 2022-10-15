@@ -4,20 +4,18 @@ E-Commerce basado en tienda de productos Apple, todo integrado en una pagina.
 
 Lenguajes HTML / CSS / Vanilla JavaScript
 
-Librerias Bootstrap / Luxon
+Librerias Bootstrap / Luxon / EmailJS
 
-Consumo de API de cotización Dólar compra para realizar la conversion al momento de cuando el usuario le de a pagar
+Incluye:
+- Full responsive.
+- Consulto hora de cotización mediante Luxon.
+- Consumo de API de cotización Dólar compra para realizar la conversión al momento de cuando el usuario quiera pagar y haga su conversión.
+- Formulario de pago funcional mediante EmailJS.
+- Contador imprimiendo en consola cada 10 segundos el tiempo total que el usuario lleva en el sitio (hasta que actualice la pagina).
+- Suma del total todo lo que el usuario agrego al carrito almacenándosela en local.
 
 Live view en https://jmtwoclickstore.netlify.app/
 
 <img src="/assets/img/readme/readme1.png">
 
-<img src="/assets/img/readme/readme2.png">
-
-<img src="/assets/img/readme/readme3.png">
-
-<img src="/assets/img/readme/readme4.png">
-
-<img src="/assets/img/readme/readme5.png">
-
-<img src="/assets/img/readme/readme6.png">
+<embed src="https://www.youtube.com/embed/h2aEnQjjj7g"></embed>

@@ -26,6 +26,7 @@ function pagoRealizado(){
         pagoSena.style.display = 'none';
         dolaresOPesos.style.display = 'none';
         precioFinal.style.display = 'none';
+        formPago.style.display = 'none'
         window.location = "#error-pago";
       });
     });
