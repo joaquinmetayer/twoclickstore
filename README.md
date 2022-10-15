@@ -16,8 +16,7 @@ Incluye:
 
 Live view en https://jmtwoclickstore.netlify.app/
 
+**Video muestra https://www.youtube.com/watch?v=h2aEnQjjj7g**
+
 <img src="/assets/img/readme/readme1.png">
 
-https://www.youtube.com/watch?vh2aEnQjjj7
-
-<embed src="https://www.youtube.com/embed/h2aEnQjjj7g"></embed>
