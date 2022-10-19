@@ -16,10 +16,12 @@ class ShoopItems{
                                               <h5 class="card-title">${this.nombre}</h5>
                                               <p class="card-text">${this.descripcion}</p>
                                             </div>
-                                            <span id="un-item-msj${this.categoria + this.numeroItem}" class="text-muted fw-lighter"><span style="visibility: hidden;">oculto</span></span>
-                                            <div class="card-body d-flex justify-content-between align-items-center">
-                                              <span class="fs-3 fw-bold">$ ${this.precio}</span>
-                                              <button class="btn btn-primary fs-6" role="button" onclick="${this.categoria + this.numeroItem}.addToCartItem()" id="btn${this.categoria + this.numeroItem}">Agregar</button>
+                                            <div>
+                                                <span id="un-item-msj${this.categoria + this.numeroItem}" class="text-muted fw-lighter"><span style="visibility: hidden;">oculto</span></span>
+                                                <div class="card-body d-flex justify-content-between align-items-center">
+                                                  <span class="fs-3 fw-bold">$ ${this.precio}</span>
+                                                  <button class="btn btn-primary fs-6" role="button" onclick="${this.categoria + this.numeroItem}.addToCartItem()" id="btn${this.categoria + this.numeroItem}">Agregar</button>
+                                                </div>
                                             </div>
                                         </div>`;
     }
