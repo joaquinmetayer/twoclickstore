@@ -11,7 +11,7 @@ btnMacbook.onclick = () => (filterProducts('macbook'));
 btnTodos.onclick = () => (filterProducts('todos'));
 
 function filterProducts(str){
-    // llamo al primer item con la clase airpods
+    // llamo al primer item con la clase
     let itemsAirpods = document.getElementsByClassName('airpods')[0];
     let itemsIphone = document.getElementsByClassName('iphone')[0];
     let itemsIpad = document.getElementsByClassName('ipad')[0];

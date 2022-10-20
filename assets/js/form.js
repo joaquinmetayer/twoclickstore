@@ -36,6 +36,5 @@ function pagoRealizado(){
         window.location = "#error-pago";
       });
     });
-  }
-   
+  } 
 }
