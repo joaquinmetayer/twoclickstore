@@ -71,6 +71,7 @@ class ShoopItems{
             totalContainer.style.display = 'none';
             retirosLocal.style.display = 'none';
             conQueAbono.style.display = 'none';
+            formPago.style.display = 'none'
             emptyItem.style.display = 'flex';
           }else if(countItemsCart >= 1){
             pagoSena.style.display = 'flex';
