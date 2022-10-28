@@ -56,7 +56,7 @@ class ShoopItems {
 
     cuantoQuieroGastar = JSON.parse(localStorage.getItem("AgregagoEnCarrito"));
     cuantoQuieroGastar += this.precio;
-    var cuantoQuieroGastarJSON = JSON.stringify(cuantoQuieroGastar);
+    let cuantoQuieroGastarJSON = JSON.stringify(cuantoQuieroGastar);
     localStorage.setItem("AgregagoEnCarrito", cuantoQuieroGastarJSON);
     console.log("Valor total agregados: $" + cuantoQuieroGastar);
   }
