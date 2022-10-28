@@ -11,7 +11,7 @@ function pagoRealizado() {
       const serviceID = "default_service";
       const templateID = "template_gqidwkg";
       emailjs.sendForm(serviceID, templateID, this).then(
-        () => {
+        _ => {
           pagarSena.classList.add("disabled");
           console.log("Pago enviado!");
           pagoExitoso.style.display = "flex";
