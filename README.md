@@ -17,4 +17,3 @@ It includes:
 Live view on https://jmtwoclickstore.netlify.app/
 
 <img src="/assets/img/readme/readme1.png">
-

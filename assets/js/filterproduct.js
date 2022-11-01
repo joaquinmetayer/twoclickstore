@@ -75,3 +75,4 @@ function filterProducts(str) {
       break;
   }
 }
+

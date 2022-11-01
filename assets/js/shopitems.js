@@ -42,6 +42,8 @@ class ShoopItems {
                                                         </div>`;
     document.getElementById(`un-item-msj${this.categoria + this.numeroItem}`).innerText = `Solo puedes agregar uno`;
 
+    
+
     sumItemsCart += this.precio;
     countItemsCart++;
     document.getElementById("btn-carrito-counter").innerHTML = countItemsCart;
@@ -59,10 +61,16 @@ class ShoopItems {
     let cuantoQuieroGastarJSON = JSON.stringify(cuantoQuieroGastar);
     localStorage.setItem("AgregagoEnCarrito", cuantoQuieroGastarJSON);
     console.log("Valor total agregados: $" + cuantoQuieroGastar);
+
+    misCompras.push(this.precio)
+    misCompras.forEach(compraElevada)
+
   }
   btnEliminar() {
     document.getElementById(`${this.categoria + this.numeroItem}`).remove();
     document.getElementById(`un-item-msj${this.categoria + this.numeroItem}`).innerHTML = `<span style="visibility: hidden;">oculto</span>`;
+    
+    formPago.style.display = "none";
 
     sumItemsCart -= this.precio;
     countItemsCart--;
@@ -88,9 +96,28 @@ class ShoopItems {
       emptyItem.style.display = "none";
       pay();
     }
+
+    // borro el item del array
+    let itemIndex = misCompras.indexOf(this.precio)
+    misCompras.splice(itemIndex, 1);
+    console.log(misCompras)
+
+    misCompras.forEach(compraElevada())
   }
 }
 
 let sumItemsCart = 0;
 let countItemsCart = 0;
 let cuantoQuieroGastar = 0;
+
+// array donde voy a alojar el precio de lo que tiene en carrito
+let misCompras = [];
+// checkeo los items del array para ver que imprimo
+function compraElevada(value){
+  if (value > 2000){
+    console.log('Compra elevada!')
+  } else {
+    console.log('Compra baja!')
+  }
+}
+
