@@ -64,6 +64,7 @@ class ShoopItems {
 
     misCompras.push(this.precio)
     misCompras.forEach(compraElevada)
+    console.log(misCompras)
 
   }
   btnEliminar() {
@@ -102,7 +103,7 @@ class ShoopItems {
     misCompras.splice(itemIndex, 1);
     console.log(misCompras)
 
-    misCompras.forEach(compraElevada())
+    misCompras.forEach(compraElevada)
   }
 }
 
@@ -116,7 +117,7 @@ let misCompras = [];
 function compraElevada(value){
   if (value > 2000){
     console.log('Compra elevada!')
-  } else {
+  } else if(value < 2000){
     console.log('Compra baja!')
   }
 }
