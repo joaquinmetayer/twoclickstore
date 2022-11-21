@@ -28,3 +28,6 @@ Live view on https://jmtwoclickstore.netlify.app/
 
 <img src="/assets/img/readme/readme6.png">
 
+<img src="/assets/img/readme/readme7.png">
+
+<img src="/assets/img/readme/readme8.png">
